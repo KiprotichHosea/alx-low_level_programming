@@ -10,12 +10,17 @@
  */
 int main(void)
 {
-	list_t *head;
+	listint_t *head;
 
 	head = NULL;
-	add_node_end(&head, "Hosea");
-	add_node_end(&head, "Kiprotich");
-	add_node_end(&head, "Mutai");
-	print_list(head);
+	add_nodeint_end(&head, 0);
+	add_nodeint_end(&head, 1);
+	add_nodeint_end(&head, 2);
+	add_nodeint_end(&head, 3);
+	add_nodeint_end(&head, 4);
+	add_nodeint_end(&head, 98);
+	add_nodeint_end(&head, 402);
+	add_nodeint_end(&head, 1024);
+	print_listint(head);
 	return (0);
 }
